@@ -308,7 +308,7 @@ a.overlay, div.overlay > a { position: absolute; left: 0; top: 0; right: 0; bott
  */
 #page-header { background: #fff; border-bottom: solid 2px #000; padding: 0 20px 20px; }
 
-#logo { float: left; width: 25%; height: 83px; }
+#logo { float: left; width: 25%; margin-right: 15px; }
 
 #main-menu { float: right; }
 #main-menu li { float: left; margin-left: 20px; padding: 0; background: none; list-style: none; position: relative; }
