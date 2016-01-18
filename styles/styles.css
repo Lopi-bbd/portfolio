@@ -332,6 +332,7 @@ a.overlay, div.overlay > a { position: absolute; left: 0; top: 0; right: 0; bott
 #lang li { float: left; margin-left; 10px; padding: 0; background: none; }
 
 #search { clear: right; float: right; }
+#search-field { height: 30px; }
 #search-field:focus::-webkit-input-placeholder { color:transparent; }
 #search-field:focus:-moz-placeholder { color:transparent; } 
 #search-field:focus::-moz-placeholder { color:transparent; } 
