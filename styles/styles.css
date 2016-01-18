@@ -337,3 +337,34 @@ a.overlay, div.overlay > a { position: absolute; left: 0; top: 0; right: 0; bott
 #search-field:focus:-moz-placeholder { color:transparent; } 
 #search-field:focus::-moz-placeholder { color:transparent; } 
 #search-field:focus:-ms-input-placeholder { color:transparent; } 
+
+
+
+/* 
+ *  ----------------------------------------------------------------------------------- MOBILE
+ */
+
+/* resolution down to 1024px */
+@media screen and (max-width: 1239px) {
+	
+}
+
+/* resolution down to 768px */
+@media screen and (max-width: 1023px) {
+	
+}
+
+/* resolution down to 480px */
+@media screen and (max-width: 767px) {
+	
+}
+
+/* resolution down to 360px */
+@media screen and (max-width: 479px) {
+	
+}
+
+/* resolution down to 320px */
+@media screen and (max-width: 359px) {
+	
+}
