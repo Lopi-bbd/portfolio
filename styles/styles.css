@@ -326,9 +326,9 @@ a.overlay, div.overlay > a { position: absolute; left: 0; top: 0; right: 0; bott
 #main-menu ul a { display: block; padding: 4px 10px; }
 
 /* ------------ menu toggler --------------- */
-#menu-toggler { display: block; float: right; width: 33px; height: 33px; text-indent: -9999px; line-height: 33px; }
-#menu-toggler span { display: block; height: 6px; width: 100%; background: #fff;  } 
-#menu-toggler span:before, #menu-toggler span:after { position: absolute; left: 0; right: 0; top: 0; height: 6px; background: #fff; }
+#menu-toggler { display: block; float: right; width: 33px; height: 33px; text-indent: -9999px; line-height: 33px; position: relative;}
+#menu-toggler span { display: block; height: 6px; width: 100%; background: #24454C;  } 
+#menu-toggler span:before, #menu-toggler span:after { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 6px; background: #24454C; }
 #menu-toggler span:after { top: auto; bottom: 0; }
 
 #meta { position: absolute; right: 0; top: 0; }
