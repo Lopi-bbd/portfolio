@@ -326,7 +326,7 @@ a.overlay, div.overlay > a { position: absolute; left: 0; top: 0; right: 0; bott
 #main-menu ul a { display: block; padding: 4px 10px; }
 
 /* ------------ menu toggler --------------- */
-#menu-toggler { display: block; float: right; width: 28px; height: 28px; text-indent: -9999px; line-height: 28px; position: relative; padding-top: 14px; }
+#menu-toggler { display: none; float: right; width: 28px; height: 28px; text-indent: -9999px; line-height: 28px; position: relative; padding-top: 14px; }
 #menu-toggler span { display: block; height: 6px; width: 100%; background: #24454C; margin-top: -3px; } 
 #menu-toggler span:before, #menu-toggler span:after { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 6px; background: #24454C; }
 #menu-toggler span:after { top: auto; bottom: 0; }
