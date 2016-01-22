@@ -361,6 +361,7 @@ a.overlay, div.overlay > a { position: absolute; left: 0; top: 0; right: 0; bott
 	#main-menu { position: fixed; right: -300px; top: 0; bottom: 0; width: 300px; transition: right 0.2s linear; }
 	
 	.show-menu #main-menu { right: 0; }
+	.show-menu #wrap-container, .show-menu #page-footer { transform: translateX(-300px); }
 }
 
 /* resolution down to 768px */
