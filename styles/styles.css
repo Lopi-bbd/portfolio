@@ -331,9 +331,9 @@ a.overlay, div.overlay > a { position: absolute; left: 0; top: 0; right: 0; bott
 #menu-toggler:before, #menu-toggler:after { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 6px; background: #24454C; transition: all 0.2s linear; }
 #menu-toggler:after { top: auto; bottom: 0; }
 
-#menu-toggler:hover span { opacity: 0; }
-#menu-toggler:hover:before { transform: rotate(45deg) translate(8px, 7px); }
-#menu-toggler:hover:after { transform: rotate(-45deg) translate(9px, -8px);}
+.show-menu #menu-toggler span { opacity: 0; }
+.show-menu #menu-toggler:before { transform: rotate(45deg) translate(8px, 7px); }
+.show-menu #menu-toggler:after { transform: rotate(-45deg) translate(9px, -8px);}
 
 #meta { position: absolute; right: 0; top: 0; }
 
