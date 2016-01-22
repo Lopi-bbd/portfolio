@@ -263,13 +263,15 @@ input[type=checkbox], input[type=radio] { width: auto; height: auto; padding: 0;
  */
 html { height: 100%; }
 body { height: 100%; }
-#wrap-container { min-height: 100%; position: relative; }
+#wrap-container { min-height: 100%; position: relative; transition: transform 0.2s linear; }
 #wrap { padding-bottom: 100px; }
 .container { max-width: 960px; margin: 0 auto; }
 
 .column.left { width: 220px; }
 .column.right { width: 220px; }
 #content { /*overflow: hidden;*/ }
+
+#page-footer { transition: transform 0.2s linear; }
 
 /* 
  *  ----------------------------------------------------------------------------------- GENERAL CONTENT ELEMENTS
