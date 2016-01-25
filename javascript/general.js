@@ -10,7 +10,7 @@ jQuery(function($){
 	
 	$('#menu-toggler').on('click', function() {
 		$('body').toggleClass('show-menu');
-		$('#mobile-menu-overlay').toggle(300);
+		$('#mobile-menu-overlay').fadeToggle(300);
 		
 	});
 });
