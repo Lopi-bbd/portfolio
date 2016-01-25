@@ -263,13 +263,15 @@ input[type=checkbox], input[type=radio] { width: auto; height: auto; padding: 0;
  */
 html { height: 100%; }
 body { height: 100%; }
-#wrap-container { min-height: 100%; position: relative; }
+#wrap-container { min-height: 100%; position: relative; transition: transform 0.2s linear; }
 #wrap { padding-bottom: 100px; }
 .container { max-width: 960px; margin: 0 auto; }
 
 .column.left { width: 220px; }
 .column.right { width: 220px; }
 #content { /*overflow: hidden;*/ }
+
+#page-footer { transition: transform 0.2s linear; }
 
 /* 
  *  ----------------------------------------------------------------------------------- GENERAL CONTENT ELEMENTS
@@ -325,15 +327,24 @@ a.overlay, div.overlay > a { position: absolute; left: 0; top: 0; right: 0; bott
 #main-menu ul ul li:hover { background: #DEF2F3; }
 #main-menu ul a { display: block; padding: 4px 10px; }
 
+#main-menu-mobile { background: #fff; border-left: solid 2px #000; }
+#main-menu-mobile ul { margin: 0; }
+#main-menu-mobile ul li { padding: 0; background: none; border-top: solid 1px #000000; }
+#main-menu-mobile ul li:first-child { border: none; }
+#main-menu-mobile a { display: block; padding: 8px 20px; transition: background 0.2s linear; text-decoration: none; }
+#main-menu-mobile a:hover { background: #DEF2F3; }
+
+#main-menu-mobile ul ul { display: none; }
+
 /* ------------ menu toggler --------------- */
 #menu-toggler { display: none; float: right; width: 28px; height: 28px; text-indent: -9999px; line-height: 28px; position: relative; padding-top: 14px; }
 #menu-toggler span { display: block; height: 6px; width: 100%; background: #24454C; margin-top: -3px; transition: all 0.2s linear; opacity: 1; } 
 #menu-toggler:before, #menu-toggler:after { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 6px; background: #24454C; transition: all 0.2s linear; }
 #menu-toggler:after { top: auto; bottom: 0; }
 
-#menu-toggler:hover span { opacity: 0; }
-#menu-toggler:hover:before { transform: rotate(45deg) translate(8px, 7px); }
-#menu-toggler:hover:after { transform: rotate(-45deg) translate(9px, -8px);}
+.show-menu #menu-toggler span { opacity: 0; }
+.show-menu #menu-toggler:before { transform: rotate(45deg) translate(8px, 7px); }
+.show-menu #menu-toggler:after { transform: rotate(-45deg) translate(9px, -8px);}
 
 #meta { position: absolute; right: 0; top: 0; }
 
@@ -358,9 +369,10 @@ a.overlay, div.overlay > a { position: absolute; left: 0; top: 0; right: 0; bott
 @media screen and (max-width: 1239px) {
 	#menu-toggler { display: block; clear: both; }
 	
-	#main-menu { position: fixed; right: -300px; top: 0; bottom: 0; width: 300px; transition: right 0.2s linear; }
+	#main-menu-mobile { position: fixed; right: -300px; top: 0; bottom: 0; width: 300px; transition: right 0.2s linear; }
 	
-	.show-menu @main-menu { right: 0; }
+	.show-menu #main-menu-mobile { right: 0; }
+	.show-menu #wrap-container, .show-menu #page-footer { transform: translateX(-300px); }
 }
 
 /* resolution down to 768px */
