@@ -327,6 +327,15 @@ a.overlay, div.overlay > a { position: absolute; left: 0; top: 0; right: 0; bott
 #main-menu ul ul li:hover { background: #DEF2F3; }
 #main-menu ul a { display: block; padding: 4px 10px; }
 
+#main-menu-mobile { background: #fff; border-left: solid 2px #000; }
+#main-menu-mobile ul { margin: 0; }
+#main-menu-mobile ul li { padding: 0; background: none; border-top: solid 1px #000000; }
+#main-menu-mobile ul li:first-child { border: none; }
+#main-menu-mobile a { display: block; padding: 8px 20px; transition: background 0.2s linear; text-decoration: none; }
+#main-menu-mobile a:hover { background: #DEF2F3; }
+
+#main-menu-mobile ul ul { display: none; }
+
 /* ------------ menu toggler --------------- */
 #menu-toggler { display: none; float: right; width: 28px; height: 28px; text-indent: -9999px; line-height: 28px; position: relative; padding-top: 14px; }
 #menu-toggler span { display: block; height: 6px; width: 100%; background: #24454C; margin-top: -3px; transition: all 0.2s linear; opacity: 1; } 
@@ -360,9 +369,9 @@ a.overlay, div.overlay > a { position: absolute; left: 0; top: 0; right: 0; bott
 @media screen and (max-width: 1239px) {
 	#menu-toggler { display: block; clear: both; }
 	
-	#main-menu { position: fixed; right: -300px; top: 0; bottom: 0; width: 300px; transition: right 0.2s linear; }
+	#main-menu-mobile { position: fixed; right: -300px; top: 0; bottom: 0; width: 300px; transition: right 0.2s linear; }
 	
-	.show-menu #main-menu { right: 0; }
+	.show-menu #main-menu-mobile { right: 0; }
 	.show-menu #wrap-container, .show-menu #page-footer { transform: translateX(-300px); }
 }
 
