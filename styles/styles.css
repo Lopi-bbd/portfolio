@@ -359,6 +359,13 @@ a.overlay, div.overlay > a { position: absolute; left: 0; top: 0; right: 0; bott
 #search-field:focus::-moz-placeholder { color:transparent; } 
 #search-field:focus:-ms-input-placeholder { color:transparent; } 
 
+#search-toggler { display: none; float: right; width: 28px; height: 28px; text-indent: -9999px; line-height: 28px; position: relative; }
+#search-toggler:before, #search-toggler:after { content: ''; position: absolute; left: 0; right: 0; top: 0; bottom: 0; transition: all 0.2s linear; opacity: 1; background: url(../images/search-icon.png) no-repeat left top; }
+#search-toggler:after  { opacity: 0; background-position: -28px 0; }
+
+#search-toggler:hover:before { opacity: 0; }
+#search-toggler:hover:after { opacity: 1; }
+
 #mobile-menu-overlay { position: fixed; left: 0; top: 0; right: 300px; bottom: 0; background: rgba( 0, 0, 0, 0.4); z-index: 1001; }
 
 /* 
@@ -374,6 +381,11 @@ a.overlay, div.overlay > a { position: absolute; left: 0; top: 0; right: 0; bott
 	
 	.show-menu #main-menu-mobile { right: 0; }
 	.show-menu #wrap-container, .show-menu #page-footer { transform: translateX(-300px); }
+	
+	/* ------------------------- SEARCH BOX ---------------------- */
+	
+	#search { display: none; }
+	#search-toggler { display: block; }
 }
 
 /* resolution down to 768px */
