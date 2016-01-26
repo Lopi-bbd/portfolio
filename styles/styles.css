@@ -327,7 +327,7 @@ a.overlay, div.overlay > a { position: absolute; left: 0; top: 0; right: 0; bott
 #main-menu ul ul li:hover { background: #DEF2F3; }
 #main-menu ul a { display: block; padding: 4px 10px; }
 
-#main-menu-mobile { background: #fff; border-left: solid 2px #000; }
+#main-menu-mobile { background: #fff; border-left: solid 2px #000; display: none; }
 #main-menu-mobile ul { margin: 0; }
 #main-menu-mobile ul li { padding: 0; background: none; border-top: solid 1px #000000; }
 #main-menu-mobile ul li:first-child { border: none; }
@@ -369,7 +369,7 @@ a.overlay, div.overlay > a { position: absolute; left: 0; top: 0; right: 0; bott
 @media screen and (max-width: 1239px) {
 	#menu-toggler { display: block; clear: both; }
 	
-	#main-menu-mobile { position: fixed; right: -300px; top: 0; bottom: 0; width: 300px; transition: right 0.2s linear; }
+	#main-menu-mobile { display: block; position: fixed; right: -300px; top: 0; bottom: 0; width: 300px; transition: right 0.2s linear; }
 	
 	.show-menu #main-menu-mobile { right: 0; }
 	.show-menu #wrap-container, .show-menu #page-footer { transform: translateX(-300px); }
