@@ -13,4 +13,9 @@ jQuery(function($){
 		$('#mobile-menu-overlay').fadeToggle(300);
 		
 	});
+	
+	$(document).on('click','#mobile-menu-overlay', function() {
+		$('body').removeClass('show-menu');
+		$('#mobile-menu-overlay').fadeOut(300);
+	});
 });
