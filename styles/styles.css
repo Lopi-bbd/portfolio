@@ -382,9 +382,12 @@ a.overlay, div.overlay > a { position: absolute; left: 0; top: 0; right: 0; bott
 	.show-menu #main-menu-mobile { right: 0; }
 	.show-menu #wrap-container, .show-menu #page-footer { transform: translateX(-300px); }
 	
+	#meta { position: static; }
+	#lang { position: absolute; right: 0; top: 0; }
+	
 	/* ------------------------- SEARCH BOX ---------------------- */
 	
-	#search { display: none; }
+	#search { display: none; position: absolute; left: 0; right: 0; top: 100%; margin: -20px -20px 0; }
 	#search-toggler { display: block; }
 }
 
