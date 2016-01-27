@@ -354,6 +354,7 @@ a.overlay, div.overlay > a { position: absolute; left: 0; top: 0; right: 0; bott
 
 #search { clear: right; float: right; }
 #search-field { height: 30px; }
+#search input[type="submit"] { transition: all 0.2s linear; }
 #search-field:focus::-webkit-input-placeholder { color:transparent; }
 #search-field:focus:-moz-placeholder { color:transparent; } 
 #search-field:focus::-moz-placeholder { color:transparent; } 
