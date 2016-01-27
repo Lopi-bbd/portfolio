@@ -18,4 +18,11 @@ jQuery(function($){
 		$('body').removeClass('show-menu');
 		$('#mobile-menu-overlay').fadeOut(300);
 	});
+	
+	/* ------------------ search box functionality -------------- */
+	
+	$('#search-toggler').on('click', function(e){ 
+	e.preventDefault();
+	$('#search').slideToggle(300);
+	});
 });
