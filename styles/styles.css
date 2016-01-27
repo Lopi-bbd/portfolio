@@ -387,7 +387,10 @@ a.overlay, div.overlay > a { position: absolute; left: 0; top: 0; right: 0; bott
 	
 	/* ------------------------- SEARCH BOX ---------------------- */
 	
-	#search { display: none; position: absolute; left: 0; right: 0; top: 100%; margin: 20px -20px 0; }
+	#search { display: none; position: absolute; left: 0; right: 0; top: 100%; margin: 22px -20px 0; border-bottom: solid 2px #000; }
+	#search-field { width: 100%; padding-right: 20%; }
+	#search input[type="submit"] { width: 20%; position: absolute; right: 0; top: 0; }
+	
 	#search-toggler { display: block; }
 }
 
