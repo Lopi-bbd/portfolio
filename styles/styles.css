@@ -393,7 +393,7 @@ a.overlay, div.overlay > a { position: absolute; left: 0; top: 0; right: 0; bott
 	#search-field { width: 100%; padding-right: 20%; }
 	#search input[type="submit"] { width: 20%; position: absolute; right: 0; top: 0; }
 	
-	#search-toggler { display: block; }
+	#search-toggler { display: block; margin-right: 15px; }
 }
 
 /* resolution down to 768px */
